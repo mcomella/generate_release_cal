@@ -42,7 +42,7 @@ def get_milestones_from_raw(raw_milestones):
     return filter(lambda m: m[KEY_DUE].year == current_year, all_milestones)
 
 def generate_table(milestones):
-    header_row = ['Title'] + ["'''{}'''".format(title) for (title, _) in ROW_TITLE_AND_DATE_OFFSET]
+    header_row = ["'''Title'''"] + ["'''{}'''".format(title) for (title, _) in ROW_TITLE_AND_DATE_OFFSET]
     table = [header_row]
 
     sorted_milestones = sorted(milestones, key=lambda x: x[KEY_DUE]) # asc or desc?
