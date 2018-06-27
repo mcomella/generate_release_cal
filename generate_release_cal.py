@@ -6,6 +6,9 @@ import json
 import urllib.request
 
 ROW_TITLE_AND_DATE_OFFSET = [
+    # (Column title, number of days offset from due date)
+    # These will be used to calculate the columns of the
+    # release calendar; they will display in order.
     ('Due date', 0),
     ('Release', 7),
 ]
