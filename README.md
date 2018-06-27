@@ -3,6 +3,8 @@ This script is used to generate release calendars for the Android Product Team
 at Mozilla, like the one at
 https://wiki.mozilla.org/Mobile/Focus/Android/Train_Schedule
 
+Only milestones from the current year will be included in the output.
+
 ## Usage
 On macOS, run the following command:
 ```sh
